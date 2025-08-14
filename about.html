@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Activities - Green Teen Force</title>
+    <title>About Us - Green Teen Force</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .hero-gradient { background: linear-gradient(135deg, #065f46 0%, #10b981 100%); }
-        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
-        .nav-link { transition: color 0.3s ease; }
-        .nav-link:hover { color: #10b981; }
-        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .hero-gradient {
+            background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #10b981;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -22,23 +40,23 @@
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <a href="index.html" class="flex items-center">
-                           <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mr-3">
-                                <span class="text-white font-bold text-lg">🌱</span>
-                            </div>
-                            <span class="text-xl font-bold text-gray-800">Green Teen Force</span>
-                        </a>
+                        <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white font-bold text-lg">🌱</span>
+                        </div>
+                        <span class="text-xl font-bold text-gray-800">Green Teen Force</span>
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html" class="nav-link text-gray-700 hover:text-green-600 font-medium">Home</a>
                     <a href="about.html" class="nav-link text-gray-700 hover:text-green-600 font-medium">About</a>
                     <a href="activities.html" class="nav-link text-gray-700 hover:text-green-600 font-medium">Activities</a>
-                    <a href="index.html#contact" class="nav-link text-gray-700 hover:text-green-600 font-medium">Contact</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-green-600 font-medium">Contact</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-gray-700 hover:text-green-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -47,108 +65,43 @@
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-green-600">Home</a>
-                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-green-600">About</a>
-                <a href="activities.html" class="block px-3 py-2 text-green-600 font-bold">Activities</a>
+                <a href="about.html" class="block px-3 py-2 text-green-600 font-bold">About</a>
+                <a href="activities.html" class="block px-3 py-2 text-gray-700 hover:text-green-600">Activities</a>
                 <a href="index.html#contact" class="block px-3 py-2 text-gray-700 hover:text-green-600">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content: Activities -->
+    <!-- Main Content: About Us -->
     <main class="pt-16">
-        <section id="activities" class="py-20 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h1 class="text-5xl font-bold text-gray-800 mb-4 fade-in">Key Activities</h1>
-                    <p class="text-xl text-gray-600 fade-in">
-                        Three core programs driving environmental impact in our community
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-6 shadow-lg card-hover fade-in">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                        <span class="text-2xl">🔬</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Research Connections</h3>
-                    <p class="text-gray-600">
-                        We connect talented local teens with structured research opportunities at a variety of organizations, from local environmental non-profits to major federal agencies like NOAA programs. 
-
-                        <br>
-
-                        <br> 
-
-                        Research opportunities include the chance to collect data and measure progress on local and national environmental indicators, such as those published by the Princeton Climate Action Plan. On the national level, research can involve working with experts in the field to participate in citizen science projects. Green Teen Force will provide resources and guidance in order to pursue these oppurtunities at programs through NOAA, as well as local organizations like Sustainable Princeton, The Watershed Institute, and more!
-
-                        <br>
-
-
-                    </p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-6 shadow-lg card-hover fade-in">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                        <span class="text-2xl">💼</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Supporting Local Businesses</h3>
-                    <p class="text-gray-600">
-                        We aim to work with local small businesses to help them in implementing sustainable practices and market their "Green Commitment" to the community by raising awareness about the various incentives offered at local, state, and federal level.
-                    
-                    <br>
-
-                        <br> 
-
-                            Small businesses form the backbone of our communities, and they cannot be left behind the journey towards a greener world. That's why Green Teen Force is pioneering a unique program to support local businesses in their green journey. Green Teen Force will help connect businesses with incentives and offer support when it comes to implementing business sustainability pratices such as setting up composting bins and creating digital menus.                         
-
-                        <br>
-                    
-                    </p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-6 shadow-lg card-hover fade-in">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                        <span class="text-2xl">🌳</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Volunteer Task Force</h3>
-                    <p class="text-gray-600">
-                        We connect with local environmental organizations to enable volunteering oppurtunities for teens to engage the broader community with sustainable practices such as tree planting and recycling.
-                    
-                    <br>
-
-                        <br> 
-
-                        Green Teen Force will connect teens with volunteer opportunities in the area based on their interests. This can include volunteering at events such as recycling drives and sustainability expos, conservation projects like trail cleanups and invasive species monitoring, and local stream clean ups. Organizations include Herrontown Woods and Friends of Princeton Open Space, and activities are available year-round to varying age groups.
-                        
-
-                        <br>
-                    
-                    
-                    
-                    </p>
-                </div>
-                
-                
-            </div>
-
-            
-        </section>
-
-<!-- Embedded Google Form Section -->
-    <section id="get-involved-form" class="py-20 bg-white">
+       <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4 fade-in">Join Our Mission</h2>
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 fade-in">About Green Teen Force</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
-                    Sign up to receive updates, learn about new research opportunities, and get involved with our community initiatives.
+                    We're building a team of highly motivated teens dedicated to helping our community achieve sustainability goals and developing greater awareness about environmental issues.
                 </p>
             </div>
-            <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden fade-in">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScaJILcH6nfX3mL9GYnUFp73icx8sqEdNf0Re7JdZsWUeHcXA/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            
+            <div class="grid md:grid-cols-1 gap-12 items-center">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Our Mission</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+To empower the next generation of climate leaders by connecting passionate teens with environmental research institutes, transforming ideas into tangible, community-level action for a sustainable future.                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+This means bridging the gap between abstract environmental challenges and concrete, local solutions. Right now, vital research projects sit on shelves simply because there aren't enough hands to carry them out. In fact, the U.S. Bureau of Labor Statistics projects a need for about 8,500 new environmental scientists each year, and we believe the next generation can start filling that gap today. By matching motivated students with these opportunities, we not only accelerate critical research but also bring those findings directly to our neighborhoods and help local small businesses adopt greener practices. This is how we make change possible. Because the climate crisis is at our doorstep, and without the next generation of thinkers, ideators and innovators coming together to tackle this urgent problem, the fight for a sustainable future will be forever lost.                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+<br>
+That’s why it’s critical that we empower teens to pursue new research and bring fresh ideas to the table, and the Green Teen Force is dedicated to doing just that.                    </p>
+                </div>
+                
+                
             </div>
         </div>
     </section>
 
-
+        <!-- You can add more sections relevant to the "About Us" page here, like "Our Team" or "Our History" -->
 
     </main>
 
@@ -196,12 +149,32 @@
     </footer>
 
     <script>
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn'), mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-        document.querySelectorAll('.fade-in').forEach(el => { observer.observe(el); });
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>
